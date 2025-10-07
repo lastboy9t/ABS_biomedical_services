@@ -1,1 +1,75 @@
 index.HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ABS - Ahad Biomedical Service</title>
+  <style>
+    *{box-sizing:border-box}
+    body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f5f5f5;color:#222}
+    header{background:#fff;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 5px rgba(0,0,0,0.08)}
+    header h1{margin:0;font-size:20px;color:#333}
+    nav a{margin-left:12px;text-decoration:none;color:#444;font-weight:600}
+    .hero{text-align:center;padding:70px 20px;background:linear-gradient(90deg,#eee,#fff)}
+    .hero h2{margin:0 0 8px;font-size:28px}
+    .section{max-width:1100px;margin:20px auto;padding:30px;background:#fff;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,0.03)}
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+    .service-box{padding:18px;border-radius:8px;background:#fafafa;border:1px solid #e9e9e9}
+    .contact-form input,.contact-form textarea{width:100%;padding:10px;margin:8px 0;border:1px solid #ccc;border-radius:6px;font-size:15px}
+    .contact-form button{background:#007bff;color:#fff;padding:10px 16px;border:none;border-radius:6px;cursor:pointer}
+    footer{text-align:center;padding:18px;color:#666;font-size:14px}
+    .whatsapp{position:fixed;right:18px;bottom:18px;background:#25D366;color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:26px;box-shadow:0 4px 14px rgba(0,0,0,0.15)}
+    @media(max-width:600px){.hero h2{font-size:22px}}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ABS - Ahad Biomedical Service</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Reliable Biomedical Repair & Maintenance</h2>
+    <p>Repairing • Purchase machines • Servicing & Cleaning</p>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p>At ABS (Ahad Biomedical Service) we repair and maintain medical equipment. Fast service, pickup & delivery available.</p>
+  </section>
+
+  <section class="section" id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-box"><h3>Machine Repairing</h3><p>Ventilators, monitors and more.</p></div>
+      <div class="service-box"><h3>Machine Purchase</h3><p>New & used machines at good prices.</p></div>
+      <div class="service-box"><h3>Servicing & Calibration</h3><p>Regular maintenance & calibration.</p></div>
+      <div class="service-box"><h3>Cleaning & Maintenance</h3><p>Hygienic deep-clean & servicing.</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>For pickup service fill the form or WhatsApp / call:</p>
+    <form class="contact-form" onsubmit="alert('Form submitted — we will contact you. (This is a demo)');return false;">
+      <input type="text" placeholder="Your Name" required>
+      <input type="text" placeholder="Machine Type / Issue" required>
+      <input type="text" placeholder="Pickup Address" required>
+      <input type="tel" placeholder="Phone / WhatsApp" required>
+      <textarea rows="4" placeholder="Additional details"></textarea>
+      <button type="submit">Request Pickup</button>
+    </form>
+    <p style="margin-top:14px">📞 WhatsApp / Call: <strong>0319-4289164</strong> / <strong>0322-4860650</strong></p>
+  </section>
+
+  <footer>&copy; 2025 ABS - Ahad Biomedical Service</footer>
+
+  <a class="whatsapp" href="https://wa.me/923194289164" target="_blank" title="WhatsApp">💬</a>
+</body>
+</html>
